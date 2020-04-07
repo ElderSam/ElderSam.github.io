@@ -6,13 +6,149 @@ body{
   font-family: 'Century Gothic',sans-serif;
 }
 
+/*
 nav{
 
     background-color: black;
     padding: 1px;
     padding-left: 1rem;
     color: rgb(158, 216, 71);
+}*/
+
+
+
+/* ----------------- HEADER MENU ------------------*/
+
+
+
+header{
+  height: 50px;
+  background: #2f3640;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: .7s;
 }
+
+header:hover{
+  padding-top: 10px;
+  height: 60px;
+}
+
+.inner-width{
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.logo{
+  float: left;
+}
+
+.logo img{
+  height: 50px;
+}
+
+.navigation-menu{
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+
+.navigation-menu a{
+  margin-left: 10px;
+  color: #ddd;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s linear;
+}
+
+.navigation-menu a:hover{
+  background: #fff;
+  color: #2f3640;
+  transform: scale(1.1);
+}
+
+.navigation-menu i{
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.home{
+  color: #ff6b6b;
+}
+
+.about{
+  color: #0abde3;
+}
+
+.works{
+  color: #feca57;
+}
+
+.team{
+  color: #5f27cd;
+}
+
+.contact{
+  color: #1dd1a1;
+}
+
+.menu-toggle-btn{
+  float: right;
+  height: 90px;
+  line-height: 50px !important;
+  color: #fff;
+  font-size: 26px;
+  display: none !important;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:700px) {
+  .menu-toggle-btn{
+    display: block !important;
+  }
+
+  .navigation-menu{
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    background: #172b4d;
+    top: 90px;
+    right: 0;
+    display: none;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .navigation-menu::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #172b4d;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+
+  .navigation-menu a{
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navigation-menu.active{
+    display: block;
+  }
+}
+
+/* ---------------- END HEADER MENU -------------------*/
 
 .box{
   width: 450px;
@@ -96,22 +232,10 @@ i{
   to {top: 20px;}
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .box{
-        max-width: 70%;
-    }
-
-    .box-img{
-        width: 150px;
-        height: 150px;
-    }
-}
-
 section{
   width: 80%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -132,4 +256,31 @@ footer{
   width: 100%;
   height: 3rem;
   background-color: black
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .box{
+      max-width: 70%;
+  }
+
+  .box-img{
+      width: 100px;
+      height: 100px;
+  }
+
+  .box h1{
+    font-size: 27px;
+  }
+
+  .box h5{
+    font-size: 18px;
+  }
+
+
+  section{
+
+    width: 100%;
+
+  }
 }

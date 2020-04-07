@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <!--script src="https://use.fontawesome.com/d1341f9b7a.js"></script-->
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
     <!--load all styles -->
@@ -11,17 +12,29 @@
 </head>
 
 <body>
-    <nav>
-        <h3>Elder Samuel</h3>
-    </nav>
-    <div class="box">
+
+    <header>
+        <div class="inner-width">
+          <a href="#inicio" class="logo"><img src="images/logo.png" alt=""></a>
+          <i class="menu-toggle-btn fas fa-bars"></i>
+          <nav class="navigation-menu">
+            <a href="#inicio"><i class="fas fa-home home"></i> Início</a>
+            <a href="#sobre"><i class="fas fa-align-left about"></i> Sobre</a>
+            <a href="#projetos"><i class="fab fa-buffer works"></i> Projetos</a>
+            <!--a href="#"><i class="fas fa-users team"></i> Team</a-->
+            <a href="#contato"><i class="fas fa-headset contact"></i> Contato</a>
+          </nav>
+        </div>
+      </header>
+      
+    <div id="inicio" class="box">
         <img src="images/profile.jpg" alt="" class="box-img">
         <h1>
             Elder Samuel</h1>
         <h5>
             Web Developer</h5>
-        <!--p>
-        A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p-->
+
+        <p>Engajado no desenvolvimento das aplicações da Internet, ou aplicações que rodam através de HTTP a partir de um servidor para um navegador</p>
         <ul>
             <li><a title="github" href="https://github.com/ElderSam/" target="_blank"><i class="fab fa-github-square"
                         aria-hidden="true"></i></a></li>
@@ -30,16 +43,36 @@
             <li><a title="whatsapp" href=" http://api.whatsapp.com/send?1=pt_BR&phone=5519998483181" target="_blank"><i
                         class="fab fa-whatsapp-square" aria-hidden="true"></i></a></li>
         </ul>
-        <i class="fas fa-chevron-down"></i>
+        <a href="#sobre"> <i class="fas fa-chevron-down"></i></a>
     </div>
 
-    <section>
+    <section id="sobre">
+        <h1>Meu Portfolio</h1>
+        <div></div>
+        
+    </section>
+
+    <section id="projetos">
+        <h1>Meu Portfolio</h1>
+        <div></div>
+        
+    </section>
+
+    <section id="contato">
         <h1>Meu Portfolio</h1>
         <div></div>
         
     </section>
 
     <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(".menu-toggle-btn").click(function(){
+          $(this).toggleClass("fa-times");
+          $(".navigation-menu").toggleClass("active");
+        });
+      </script>
 </body>
 
 </html>
