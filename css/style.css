@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg2.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Century Gothic',sans-serif;
+}
+
+nav{
+
+    background-color: black;
+    padding: 1px;
+    padding-left: 1rem;
+    color: rgb(158, 216, 71);
+}
+
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  color: white;
+  transition: 1s;
+}
+
+.box:hover{
+    background: rgba(0, 0, 0, .9);
+}
+
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.box p{
+  text-align: justify;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+/*
+.box li a:hover{
+  color: #b9b9b9;
+}*/
+
+i{
+    color: rgb(158, 216, 71);
+}
+
+.fa-github-square:hover{
+    color: white
+}
+
+.fa-linkedin:hover{
+    color: #0072b1;
+}
+
+.fa-whatsapp-square:hover{
+    color: green;
+}
+
+.fa-chevron-down{
+    color: white;
+    position: relative;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 20px;}
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .box{
+        max-width: 70%;
+    }
+
+    .box-img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+section{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+section h1{
+  text-align: center
+}
+
+section div{
+  background-color: white;
+  width: 20rem;
+  height: 25rem
+}
+
+
+footer{
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+  background-color: black
+}
