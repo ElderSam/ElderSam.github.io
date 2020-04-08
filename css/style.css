@@ -334,9 +334,15 @@ section#contato ul{
 
 footer{
   margin-top: 1rem;
+  margin-bottom: 0;
   width: 100%;
-  height: 3rem;
-  background-color: black
+  height: 4rem;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 @media only screen and (max-width: 768px) {
