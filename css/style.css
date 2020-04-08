@@ -253,10 +253,63 @@ section h1{
 
 section div{
   background-color: white;
-  height: 25rem
+
 }
 
+section#sobre{
+  background-color: rgba(19, 204, 50, 0.7);
 
+}
+
+section#sobre div p{
+  padding: 1rem;
+  font-size: 20px;
+}
+
+section#contato div{
+  text-align: center;
+}
+
+section#contato ul{
+  font-size: 20px;
+  
+}
+
+#contato li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+
+}
+
+#contato li a i{
+
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+  margin-left: .5rem;
+}
+
+#contato li a i.fa-linkedin{
+  color: rgb(55, 96, 211);
+}
+
+#contato li a i.fa-linkedin:hover{
+  color: rgb(19, 49, 133);
+}
+.fa-envelope{
+  color: red;
+  padding: .1rem;
+}
+
+.fa-envelope:hover{
+  color: white;
+  background-color: red;
+}
+
+.fa-hourglass-end{
+  color: black;
+}
 
 /* ------------ Gallery flexbox - Portfolio    ----------------- */
 .flex img {
