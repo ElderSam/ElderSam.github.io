@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--load all styles -->
     <title>Personal WebSite</title>
 </head>
@@ -20,7 +24,7 @@
           <nav class="navigation-menu">
             <a href="#inicio"><i class="fas fa-home home"></i> Início</a>
             <a href="#sobre"><i class="fas fa-align-left about"></i> Sobre</a>
-            <a href="#projetos"><i class="fab fa-buffer works"></i> Projetos</a>
+            <a href="#portfolio"><i class="fab fa-buffer works"></i> Portfolio</a>
             <!--a href="#"><i class="fas fa-users team"></i> Team</a-->
             <a href="#contato"><i class="fas fa-headset contact"></i> Contato</a>
           </nav>
@@ -28,6 +32,7 @@
       </header>
       
     <div id="inicio" class="box">
+        <div>
         <img src="images/profile.jpg" alt="" class="box-img">
         <h1>
             Elder Samuel</h1>
@@ -45,34 +50,62 @@
         </ul>
         <a href="#sobre"> <i class="fas fa-chevron-down"></i></a>
     </div>
+    </div>
 
     <section id="sobre">
-        <h1>Meu Portfolio</h1>
+        <h1>Sobre mim</h1>
         <div></div>
+        
         
     </section>
 
-    <section id="projetos">
-        <h1>Meu Portfolio</h1>
-        <div></div>
-        
+    <section><h1>Meu Portfolio</h1></section>
+    
+    <section id="portfolio" class="flex">
+      <div>
+        <img src="images/ecommerce.jpg">
+        <p>E-commerce</p>
+        <a href="https://github.com/ElderSam/E-Commerce">link do código</a>
+      </div>
+      <div>
+        <img src="images/to-do-app.png">
+        <p>To Do List App</p>
+        <a href="./portfolio/to-do-list/index.html">link</a>
+      </div>
+      <div>
+        <img src="images/app-ong.png">
+        <p>App de arrecadação para ONGs</p>
+        <a href="https://github.com/ElderSam/semana-omnistack11">link do código</a>
+      </div>
+      <div>
+        <img src="images/em-breve.jpg">
+        <p>Chat em tempo real (Em breve)</p>
+      </div>
+      <div>
+        <img src="images/em-breve.jpg">
+        <p>Quiz App (Em breve)</p>
+      </div>
+      <div>
+        <img src="images/animate-form.jpg">
+        <p>Formulário Animado</p>
+        <a href="">link</a>
+      </div>
     </section>
-
+  
+  
     <section id="contato">
-        <h1>Meu Portfolio</h1>
+        <h1>Me mande uma mensagem</h1>
         <div></div>
         
     </section>
+    
+
 
     <footer></footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        $(".menu-toggle-btn").click(function(){
-          $(this).toggleClass("fa-times");
-          $(".navigation-menu").toggleClass("active");
-        });
-      </script>
+    <script type="text/javascript" src="js/scroll-suave.js"></script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

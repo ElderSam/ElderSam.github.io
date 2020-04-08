@@ -3,7 +3,9 @@ body{
   padding: 0;
   background: url(../images/bg2.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* para fixar a imagem de fundo mesmo quando rola a página */
   font-family: 'Century Gothic',sans-serif;
+  
 }
 
 /*
@@ -22,11 +24,13 @@ nav{
 
 
 header{
+  z-index: 2; /* para nada da página sobrepor o menu */
   height: 50px;
   background: #2f3640;
 
   overflow: hidden;
   position: fixed;
+  margin: 0;
   top: 0;
   width: 100%;
   transition: .7s;
@@ -103,6 +107,7 @@ header:hover{
 .menu-toggle-btn{
   float: right;
   height: 90px;
+  margin-right: 1rem;
   line-height: 50px !important;
   color: #fff;
   font-size: 26px;
@@ -153,12 +158,14 @@ header:hover{
 .box{
   width: 450px;
   background: rgba(0, 0, 0, 0.7);
-  padding: 40px;
+  padding: 5vh;
   text-align: center;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 4rem;
+  padding-top: 1rem;
   color: white;
   transition: 1s;
+  height: 80vh;
 }
 
 .box:hover{
@@ -167,8 +174,8 @@ header:hover{
 
 .box-img{
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .box h1{
   font-size: 40px;
@@ -233,7 +240,7 @@ i{
 }
 
 section{
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   margin-top: 2rem;
   padding: 1rem;
@@ -246,10 +253,31 @@ section h1{
 
 section div{
   background-color: white;
-  width: 20rem;
   height: 25rem
 }
 
+
+
+/* ------------ Gallery flexbox - Portfolio    ----------------- */
+.flex img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* CSS FLEXBOX 1 */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.flex > div {
+  flex: 1 1 20rem;
+  margin: 10px;
+}
+/* ------------ End Gallery flexbox - Portfolio    ----------------- */
 
 footer{
   margin-top: 1rem;
