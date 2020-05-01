@@ -311,6 +311,14 @@ section#contato ul{
   color: black;
 }
 
+#portfolio div{
+  background-color: rgba(69, 158, 88, 0.7);
+}
+
+#portfolio div:hover{
+  background-color: rgba(0, 255, 55, 0.5);
+}
+
 /* ------------ Gallery flexbox - Portfolio    ----------------- */
 .flex img {
   max-width: 100%;
@@ -329,6 +337,11 @@ section#contato ul{
 .flex > div {
   flex: 1 1 20rem;
   margin: 10px;
+}
+
+
+.info-card{
+  padding: 0 10px;
 }
 /* ------------ End Gallery flexbox - Portfolio    ----------------- */
 
