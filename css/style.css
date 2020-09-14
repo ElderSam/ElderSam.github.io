@@ -1,9 +1,10 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(../images/bg2.jpg) no-repeat;
+  /*background: url(../images/bg2.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* para fixar a imagem de fundo mesmo quando rola a página */
+  background-attachment: fixed; *//* para fixar a imagem de fundo mesmo quando rola a página */
+  background-color: rgb(53, 0, 97);
   font-family: 'Century Gothic',sans-serif;
   
 }
@@ -244,26 +245,22 @@ section{
   margin: auto;
   margin-top: 2rem;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color:black;
+  border-radius: 2rem;
 }
 
 section h1{
-  text-align: center
+  text-align: center;
+  color: white;
 }
 
 section div{
   background-color: white;
-
-}
-
-section#sobre{
-  background-color: rgba(19, 204, 50, 0.7);
-
 }
 
 section#sobre div p{
   padding: 1rem;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 section#contato div{
@@ -272,6 +269,10 @@ section#contato div{
 
 section#contato ul{
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 
@@ -311,13 +312,15 @@ section#contato ul{
   color: black;
 }
 
-#portfolio div{
-  background-color: rgba(69, 158, 88, 0.7);
+#portfolio{
+  background-color: black;
 }
 
-#portfolio div:hover{
-  background-color: rgba(0, 255, 55, 0.5);
+#portfolio div.project{
+  background-color: rgb(106, 21, 175);
+  color: white;
 }
+
 
 /* ------------ Gallery flexbox - Portfolio    ----------------- */
 .flex img {
@@ -339,10 +342,29 @@ section#contato ul{
   margin: 10px;
 }
 
-
 .info-card{
   padding: 0 10px;
+  background-color: transparent;
+  padding-bottom: 1rem;
 }
+
+.info-card a{
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.info-card a:hover{
+  background-color: white;
+  color: black;
+}
+
 /* ------------ End Gallery flexbox - Portfolio    ----------------- */
 
 footer{
