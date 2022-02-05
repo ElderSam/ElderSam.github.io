@@ -267,8 +267,14 @@ section h1{
 }
 
 section div{
-  background-color: white;
+  background-color: #e3e3e3;
+  transition: 0.6s;
 }
+
+section div:hover{
+  background-color: #f3f3f3;
+}
+
 
 section#sobre div p{
   padding: 1rem;
