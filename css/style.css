@@ -177,7 +177,19 @@ header:hover{
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  background: #2e0053;
+  opacity: 0.7;
+  transition: 0.5s;
 }
+
+.box-img:hover {
+  width: 200px;
+  height: 200px;
+  background: #4e008d;
+  border-radius: 10px;
+  opacity: 1;
+}
+
 .box h1{
   font-size: 40px;
   letter-spacing: 4px;
